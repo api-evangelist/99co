@@ -1,7 +1,31 @@
 aid: 99co
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/99co.png
 name: 99.co
-description: 99.co is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  99.co (99 Group) is a Singapore-headquartered real estate technology company
+  and one of the largest property marketplaces in Southeast Asia. Founded in 2014
+  by Darius Cheung, Yan Phun and Conor McLaughlin, it operates consumer property
+  portals across Singapore and Indonesia, including 99.co and SRX.com.sg in
+  Singapore and 99.co/id and Rumah123.com in Indonesia. The platform lets buyers,
+  renters and agents search HDB resale flats, executive condos, condominiums,
+  landed homes and new-launch projects for sale and rent, with map-based search,
+  transaction data, agent directories, mortgage tools and nearby-amenity insights
+  (MRT, schools, commute times). 99 Group is backed by investors including Sequoia
+  Capital, 500 Global, Golden Gate Ventures, Quest Ventures and East Ventures.
+  This profile was surfaced as a 500 Global portfolio company and enriched by the
+  API Evangelist pipeline; 99.co exposes consumer web products but publishes no
+  first-party public developer API or portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/99co/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +38,14 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Real Estate
+- PropTech
+- Property Listings
+- Real Estate Marketplace
+- Property Search
+- Singapore
+- Indonesia
+- Housing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/99co-domain-security.yml
 - type: Website
   url: https://99.co
+- type: About
+  url: https://www.99.co/about-us
+- type: Blog
+  url: https://www.99.co/singapore/insider/
+- type: TermsOfService
+  url: https://www.99.co/terms
+- type: PrivacyPolicy
+  url: https://www.99.co/privacy
+- type: Careers
+  url: https://careers.99.co/
+- type: GitHubOrganization
+  url: https://github.com/team99
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
